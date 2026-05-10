@@ -138,7 +138,7 @@ function ServiceCard({ service, index }: { service: typeof SERVICES[0]; index: n
       </div>
 
       {/* Content side */}
-      <div className="flex-1 p-8 lg:p-12 flex flex-col justify-center">
+      <div className="flex-1 p-4 lg:p-12 flex flex-col justify-center">
         <p className="text-[#C9A84C] text-xs tracking-[0.2em] uppercase mb-3 font-medium">
           {service.subtitle}
         </p>
