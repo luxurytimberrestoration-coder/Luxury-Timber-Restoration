@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Gallery", href: "#gallery" },
   // { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Booking", href: "#" },
 ];
 
 export default function Navbar() {
@@ -26,8 +26,8 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-            ? "bg-[#1a1108]/95 backdrop-blur-md shadow-lg shadow-black/20 py-3"
-            : "bg-transparent py-6"
+          ? "bg-[#1a1108]/95 backdrop-blur-md shadow-lg shadow-black/20 py-3"
+          : "bg-transparent py-6"
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
