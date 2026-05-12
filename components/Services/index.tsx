@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 const SERVICES = [
   {
@@ -160,7 +161,8 @@ function ServiceCard({ service, index }: { service: typeof SERVICES[0]; index: n
         </ul>
 
         {/* CTA */}
-        <button
+        <Link href="/booking">
+                <button
           onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
           className="self-start flex items-center gap-2 text-[#C9A84C] text-sm font-medium border border-[#C9A84C]/40 hover:border-[#C9A84C] hover:bg-[#C9A84C]/10 px-5 py-2.5 rounded-sm transition-all duration-300 group/btn"
         >
@@ -170,6 +172,7 @@ function ServiceCard({ service, index }: { service: typeof SERVICES[0]; index: n
             className="transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
           />
         </button>
+        </Link>
       </div>
     </div>
   );

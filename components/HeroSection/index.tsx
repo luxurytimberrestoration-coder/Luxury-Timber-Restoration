@@ -100,7 +100,7 @@ export default function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 items-start">
-            <a href="#booking">
+            <a href="/booking">
               <Button
                 size="lg"
                 className="text-[#1a1108] text-sm tracking-widest uppercase font-semibold px-8 py-4 h-auto hover:scale-105 transition-all duration-300"
@@ -120,7 +120,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-[#E8C98A] text-sm tracking-widest uppercase font-semibold px-8 py-4 h-auto hover:bg-white/10 transition-all duration-300"
+                className="text-[#E8C98A] text-sm tracking-widest uppercase font-semibold px-8 py-4 h-auto hover:bg-white/90 transition-all duration-300"
                 style={{
                   fontFamily: "'Jost', sans-serif",
                   letterSpacing: "0.15em",
@@ -136,8 +136,8 @@ export default function HeroSection() {
           {/* Stats row */}
           <div className="flex gap-8 mt-14 pt-8 border-t border-white/10">
             {[
-              { value: "10+", label: "Years Experience" },
-              { value: "500+", label: "Projects Done" },
+              { value: "5+", label: "Years Experience" },
+              { value: "250+", label: "Projects Done" },
               { value: "100%", label: "Satisfaction" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col">

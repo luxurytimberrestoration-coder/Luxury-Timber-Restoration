@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/Navabar";
+import Footer from "@/components/Footer";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -27,7 +29,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={cn(playfair.variable, dmSans.variable)}>
       <body className="bg-[#1A1209] font-sans antialiased">
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
