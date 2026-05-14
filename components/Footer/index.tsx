@@ -82,8 +82,7 @@ export default function Footer() {
           background: "linear-gradient(90deg, transparent 0%, #C9A96E40 30%, #C9A96E 50%, #C9A96E40 70%, transparent 100%)",
         }}
       />
-
-      {/* Ambient glow */}
+      
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] pointer-events-none"
         style={{
