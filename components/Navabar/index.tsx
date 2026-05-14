@@ -5,11 +5,11 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
   { label: "Gallery", href: "#gallery" },
   // { label: "About", href: "#about" },
-  { label: "Booking", href: "#" },
+  // { label: "Booking", href: "/booking" },
 ];
 
 export default function Navbar() {
@@ -76,9 +76,9 @@ export default function Navbar() {
 
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-4">
-            <a href="#booking" className="hidden md:block">
+            <a href="/booking" className="hidden md:block">
               <Button
-                className="text-[#1a1108] text-xs tracking-widest uppercase font-semibold px-6 py-2 transition-all duration-300 hover:scale-105"
+                className="text-[#1a1108] text-xs tracking-widest uppercase font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 cursor-pointer"
                 style={{
                   background: "linear-gradient(135deg, #C9A96E 0%, #E8C98A 50%, #C9A96E 100%)",
                   fontFamily: "'Jost', sans-serif",
@@ -118,9 +118,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a href="#booking" onClick={() => setMenuOpen(false)}>
+            <a href="/booking" onClick={() => setMenuOpen(false)}>
               <Button
-                className="w-full text-[#1a1108] text-xs tracking-widest uppercase font-semibold py-2 mt-2"
+                className="w-full text-[#1a1108] text-xs tracking-widest uppercase font-semibold py-2 mt-2 cursor-pointer"
                 style={{
                   background: "linear-gradient(135deg, #C9A96E 0%, #E8C98A 50%, #C9A96E 100%)",
                   fontFamily: "'Jost', sans-serif",
